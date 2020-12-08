@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-cyan: hsl(185, 75%, 39%);
+  --color-desaturated-blue: hsl(229, 23%, 23%);
+  --color-grayish-blue: hsl(227, 10%, 46%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-cyan);
+}
+
+.bg-top {
+  position: absolute;
+    background: url(../images/bg-pattern-top.svg) no-repeat bottom right;
+    z-index: -1;
+    height: 50%;
+    width: 50%;
+    top: 0;
+    left: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.card {
+  margin-top: 200px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 15px;
+}
+
+.card-bg {
+  background-image: url(./images/bg-pattern-card.svg);
+  border-radius: 15px 15px 0 0;
+}
+
+.avatar {
+  position: relative;
+  left: 135px;
+  bottom: 50px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card-content {
+  margin-top: -25px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-dark-gray);
+  height: 80px;
+}
+
+.card-content p {
+  font-size: 18px;
+  color: var(--color-desaturated-blue);
+}
+
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-desaturated-blue);
+  margin-top: -45px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.bg-bottom {
+  position: absolute;
+  background: url(../images/bg-pattern-bottom.svg) no-repeat;
+  z-index: -1;
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 375px) {
+  .bg-top {
+    position: absolute;
+    background: url(../images/bg-pattern-top.svg) no-repeat bottom right;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+  }
+
+  .bg-bottom {
+    position: absolute;
+  background: url(../images/bg-pattern-bottom.svg) no-repeat;
+  z-index: -1;
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  }
+}
