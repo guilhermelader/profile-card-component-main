@@ -2,6 +2,9 @@
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
+## [Live View](https://profile-card-component-main-lyart.vercel.app/)
+
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
